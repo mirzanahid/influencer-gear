@@ -1,0 +1,498 @@
+/* ==============================
+        common css start
+   ============================== */
+* {
+        margin: 0;
+        padding: 0;
+}
+
+ol,
+ul {
+        list-style: none;
+}
+
+a,
+a:hover,
+a:focus {
+        text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+        margin: 0;
+        padding: 0;
+}
+
+.container {
+        width: 1200px;
+        margin: 0 auto;
+}
+
+.text {
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Inter', sans-serif;
+}
+
+/* ==============================
+        common css end
+   ============================== */
+/* ==============================
+        typography css start
+   ============================== */
+.logo-text {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        color: #3A3A3A;
+}
+
+.navitems-text {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #3A3A3A;
+
+}
+
+.main-heading {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 52px;
+        line-height: 70px;
+        color: #3A3A3A;
+}
+
+.banner-pra {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #3A3A3A;
+
+}
+
+.collection-heading {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 70px;
+        color: #3A3A3A;
+}
+
+.card-heading {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 40px;
+        color: #18191F;
+}
+
+.card-price {
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+        color: rgba(0, 0, 0, 0.87);
+
+}
+
+.card-rating {
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        color: #5E6366;
+
+}
+
+.card-des {
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 143%;
+        color: #787885;
+
+}
+
+.featured-heading {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 60px;
+        color: #0A0826;
+
+}
+
+.feature-pra {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 28px;
+        color: #6C6C6C;
+
+}
+
+.footer-copywrite {
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #D9DBE1;
+
+}
+
+/* ==============================
+        typography css end
+   ============================== */
+/* ==============================
+        buttons css start
+   ============================== */
+
+.round-btn {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: #FFFFFF;
+        background: #E02C6D;
+        border-radius: 41px;
+        padding: 12px 24px;
+        display: inline-block;
+
+}
+
+.round-btn i {
+        font-size: 16px;
+        margin-left: 10px;
+}
+
+.plain-btn {
+        border-radius: 0;
+}
+
+.collction-see-btn {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(224, 44, 109, 0.87);
+        display: inline-block;
+
+}
+
+.collction-see-btn i {
+        color: rgba(224, 44, 109, 0.87);
+        font-size: 16px;
+
+}
+
+
+
+/* ==============================
+        buttons css end
+   ============================== */
+
+/* -----------------header css start-------------- */
+header {
+        background-color: #FFFFFF;
+        padding-bottom: 70px;
+
+}
+
+/* ==============================
+        nav css start
+   ============================== */
+nav .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 80px 0 50px 0;
+}
+
+nav .navbar .nav-items {
+        display: flex;
+        align-items: center;
+}
+
+nav .navbar .nav-items ul li {
+        display: inline-block;
+        margin-left: 34px;
+}
+
+nav .navbar .nav-items .nav-icons {
+        display: flex;
+        align-items: center;
+}
+
+nav .navbar .nav-items ul li a .search {
+        width: 24px;
+        height: 24px;
+}
+
+nav .navbar .nav-items ul li a .cart-shoping {
+        width: 36px;
+        height: 36px;
+
+}
+
+/* ==============================
+        nav css end
+   ============================== */
+/* ==============================
+        banner css start
+   ============================== */
+
+
+#banner-part .banner-main {
+        display: flex;
+        justify-content: space-between;
+}
+
+#banner-part .banner-main .banner-text {
+        padding-top: 110px;
+}
+
+#banner-part .banner-main .banner-text h1 {
+        width: 582px;
+        margin-bottom: 10px;
+}
+
+#banner-part .banner-main .banner-text p {
+        width: 505px;
+}
+
+#banner-part .banner-main .banner-text a {
+        margin-top: 25px;
+}
+
+#banner-part .banner-main .banner-image {
+        width: 475px;
+        height: 475px;
+        position: relative;
+}
+
+#banner-part .banner-main .banner-image .cercle-design {
+        width: 100%;
+        height: 100%;
+
+}
+
+#banner-part .banner-main .banner-image .camera-image {
+        width: 440px;
+        height: 414px;
+        position: absolute;
+        top: 35px;
+        left: 0;
+
+}
+
+/* ==============================
+        banner css end
+   ============================== */
+/* -----------------header css end-------------- */
+
+/* ==============================
+        partner css start
+   ============================== */
+#partner {
+        display: flex;
+        align-items: center;
+        padding-bottom: 100px;
+        flex-direction: column;
+}
+
+#partner hr {
+        width: 1140px;
+        height: 1px;
+        background: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);
+        border: 0;
+}
+
+#partner .partner-logo {
+        display: flex;
+        justify-content: center;
+        padding: 30px 0;
+}
+
+#partner .partner-logo ul li {
+        display: inline-block;
+        margin: 0 30px;
+}
+
+/* ==============================
+        partner css end
+   ============================== */
+/* ==============================
+        collection css start
+   ============================== */
+#collection {
+        padding-bottom: 100px;
+}
+
+#collection .title {
+        text-align: center;
+        margin-bottom: 30px;
+}
+
+#collection .collection-main {
+        display: flex;
+        justify-content: center;
+}
+
+#collection .collection-main .cards {
+        width: 1047px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 30px;
+        justify-self: center;
+}
+
+#collection .collection-main .card {
+        width: 300px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+        border-radius: 5px;
+        padding: 17px 15px 19px 15px;
+}
+
+#collection .collection-main .carde-image {
+        width: 300px;
+        height: 256px;
+}
+
+#collection .collection-main .carde-image img {
+        width: 100%;
+        height: 100%;
+}
+
+#collection .collection-main .card .card-text h4 {
+        margin-bottom: 5px;
+}
+
+#collection .collection-main .card .card-text .card-price {
+        margin-bottom: 8px;
+        display: inline-block;
+}
+
+#collection .collection-main .card .card-text .cart-star {
+        display: flex;
+        margin-bottom: 5px;
+}
+
+#collection .collection-main .card .card-text .cart-star i {
+        font-size: 11px;
+        color: #FB8200;
+        margin-right: 3px;
+}
+
+#collection .collection-main .card .card-text .cart-star .card-rating {
+        margin-left: 8px;
+        display: inline-block;
+}
+
+#collection .collection-main .card .card-text .card-des {
+        width: 196px;
+}
+
+#collection .see-more {
+        width: 1103px;
+        text-align: right;
+        margin-top: 50px;
+}
+
+/* ==============================
+        collection css end
+   ============================== */
+
+/* ==============================
+        featured css start
+   ============================== */
+#fetured {
+        margin-bottom: 100px;
+}
+
+#fetured .main-fetured {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+
+#fetured .main-fetured .featured-image {
+        width: 404px;
+        height: 270px;
+}
+
+#fetured .main-fetured .featured-image img {
+        width: 100%;
+        height: 100%;
+}
+
+#fetured .main-fetured .featured-text {
+        width: 610px;
+}
+
+#fetured .main-fetured .featured-text h3 {
+        margin-bottom: 16px;
+}
+
+#fetured .main-fetured .featured-text p {
+        width: 510px;
+}
+
+#fetured .main-fetured .featured-text a {
+        margin-top: 16px;
+}
+
+/* ==============================
+        featured css end
+   ============================== */
+/* ==============================
+        footer css start
+   ============================== */
+footer {
+        padding: 50px 0;
+        background: #0A0826;
+        text-align: center;
+}
+
+footer .footer-logo {
+        color: #FFFFFF;
+        margin-bottom: 5px;
+}
+
+footer small {
+        display: block;
+        width: 280px;
+        margin: 0 auto;
+}
+
+footer .social {
+        margin-top: 17px;
+}
+
+footer .social ul li {
+        display: inline-block;
+        margin: 0 8px;
+}
+
+footer .social ul li a i {
+        color: #FFFFFF;
+        font-size: 17px;
+        width: 32px;
+        height: 32px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        text-align: center;
+        line-height: 32px;
+}
+
+/* ==============================
+        footer css end
+   ============================== */
