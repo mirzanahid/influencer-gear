@@ -29,7 +29,7 @@ p {
 }
 
 .container {
-        width: 1200px;
+        max-width: 1200px;
         margin: 0 auto;
 }
 
@@ -44,6 +44,12 @@ p {
 /* ==============================
         typography css start
    ============================== */
+.navbar .nav-burger {
+        width: 24px;
+        height: 24px;
+        display: none;
+}
+
 .logo-text {
         font-family: 'Poppins', sans-serif;
         font-weight: 700;
@@ -190,6 +196,7 @@ p {
 .collction-see-btn i {
         color: rgba(224, 44, 109, 0.87);
         font-size: 16px;
+        margin-left: 10px;
 
 }
 
@@ -231,14 +238,28 @@ nav .navbar .nav-items .nav-icons {
         align-items: center;
 }
 
-nav .navbar .nav-items ul li a .search {
+nav .navbar .nav-items ul li .search {
         width: 24px;
         height: 24px;
+        display: inline-block;
 }
 
-nav .navbar .nav-items ul li a .cart-shoping {
+nav .navbar .nav-items ul li .search img {
+        width: 100%;
+        height: 100%;
+}
+
+nav .navbar .nav-items ul li .cart-shoping {
         width: 36px;
         height: 36px;
+        display: inline-block;
+
+}
+
+nav .navbar .nav-items ul li .cart-shoping img {
+        width: 100%;
+        height: 100%;
+
 
 }
 
@@ -288,9 +309,9 @@ nav .navbar .nav-items ul li a .cart-shoping {
         width: 440px;
         height: 414px;
         position: absolute;
-        top: 35px;
-        left: 0;
-
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 }
 
 /* ==============================
@@ -316,14 +337,20 @@ nav .navbar .nav-items ul li a .cart-shoping {
 }
 
 #partner .partner-logo {
+        width: 1090px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         padding: 30px 0;
 }
 
-#partner .partner-logo ul li {
-        display: inline-block;
-        margin: 0 30px;
+#partner .partner-logo li {
+        width: 80px;
+        height: 50px;
+}
+
+#partner .partner-logo li img {
+        width: 100%;
+        height: 100%;
 }
 
 /* ==============================
@@ -344,6 +371,9 @@ nav .navbar .nav-items ul li a .cart-shoping {
 #collection .collection-main {
         display: flex;
         justify-content: center;
+        flex-direction: column;
+        width: 1047px;
+        margin: 0 auto;
 }
 
 #collection .collection-main .cards {
@@ -351,25 +381,33 @@ nav .navbar .nav-items ul li a .cart-shoping {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-row-gap: 30px;
+        grid-column-gap: 30px;
         justify-self: center;
+        margin: 0 auto;
 }
 
 #collection .collection-main .card {
-        width: 300px;
+        width: 330px;
         background: #FFFFFF;
         box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
         border-radius: 5px;
-        padding: 17px 15px 19px 15px;
+        padding: 17px 0 19px 0;
 }
 
 #collection .collection-main .carde-image {
         width: 300px;
         height: 256px;
+        margin: 0 auto;
 }
 
 #collection .collection-main .carde-image img {
         width: 100%;
         height: 100%;
+}
+
+#collection .collection-main .card .card-text {
+        padding-left: 15px;
+        margin-top: 20px;
 }
 
 #collection .collection-main .card .card-text h4 {
@@ -402,9 +440,9 @@ nav .navbar .nav-items ul li a .cart-shoping {
 }
 
 #collection .see-more {
-        width: 1103px;
         text-align: right;
         margin-top: 50px;
+
 }
 
 /* ==============================
@@ -496,3 +534,982 @@ footer .social ul li a i {
 /* ==============================
         footer css end
    ============================== */
+
+/* ==========================>>>responsive start<<<<====================== */
+
+/* ========responsive for mobile device============ */
+
+@media only screen and (max-width:575.98px) {
+
+        /* ==============================
+              common responsive start
+           ============================== */
+        .container {
+                max-width: 100%;
+                padding: 0 15px;
+        }
+
+        /* ==============================
+              common responsive end
+           ============================== */
+        /* ==============================
+             typography responsive start
+           ============================== */
+        nav .logo-text {
+                font-size: 16px;
+                line-height: 24px;
+        }
+
+        .main-heading {
+                font-size: 28px;
+                line-height: 42px;
+        }
+
+        .banner-pra {
+                font-size: 14px;
+                line-height: 21px;
+
+        }
+
+        .collection-heading {
+                font-size: 16px;
+                line-height: 24px;
+
+        }
+
+        .card-heading {
+                font-weight: 700;
+        }
+
+        .card-price {
+                font-weight: 700;
+
+        }
+
+        .featured-heading {
+                font-size: 24px;
+                line-height: 36px;
+        }
+
+        .logo-text {
+                font-size: 16px;
+                line-height: 24px;
+        }
+
+        .footer-copywrite {
+                font-size: 12px;
+                line-height: 24px;
+        }
+
+        /* ==============================
+              typography responsive end
+           ============================== */
+        /* ==============================
+                 nav responsive start
+           ============================== */
+
+
+        nav .navbar {
+                padding: 35px 0 22px 0;
+        }
+
+        nav .navbar .nav-burger {
+                display: block;
+        }
+
+        nav .navbar .nav-items ul {
+                display: none;
+        }
+
+
+
+        nav .navbar .nav-items ul li .search {
+                display: none;
+        }
+
+        nav .navbar .nav-items ul li {
+                margin-left: 0px;
+        }
+
+        nav .navbar .nav-items ul li .cart-shoping {
+                width: 24px;
+                height: 24px;
+        }
+
+        /* ==============================
+                 nav responsive end
+           ============================== */
+        /* ==============================
+                 banner responsive start
+           ============================== */
+        #banner-part .banner-main {
+                flex-direction: column-reverse;
+                align-items: center;
+        }
+
+        #banner-part .banner-main .banner-image {
+                width: 257px;
+                height: 257px;
+        }
+
+        #banner-part .banner-main .banner-image .camera-image {
+                width: 202px;
+                height: 190px;
+                position: absolute;
+
+        }
+
+        #banner-part .banner-main .banner-text {
+                padding-top: 10px;
+                text-align: center;
+                width: 280px;
+        }
+
+        #banner-part .banner-main .banner-text h1 {
+                width: auto;
+        }
+
+        #banner-part .banner-main .banner-text p {
+                width: auto;
+        }
+
+        /* ==============================
+                 banner responsive end
+           ============================== */
+        /* ==============================
+              partner responsive start
+           ============================== */
+        #partner {
+                padding-bottom: 50px;
+        }
+
+        #partner hr {
+                width: 100%;
+
+        }
+
+        #partner .partner-logo {
+                width: 290px;
+                padding: 30px 0 0 0;
+                flex-wrap: wrap;
+        }
+
+        #partner .partner-logo li {
+                margin-bottom: 15px;
+                width: 60px;
+                height: 30px;
+        }
+
+        /* ==============================
+              partner responsive end
+           ============================== */
+
+        /* ==============================
+            collection responsive start
+           ============================== */
+        #collection {
+                padding-bottom: 50px;
+        }
+
+        #collection .collection-main {
+                width: 280px;
+        }
+
+        #collection .collection-main .cards {
+                width: auto;
+                grid-template-columns: repeat(1, 1fr);
+                grid-row-gap: 20px;
+        }
+
+        #collection .collection-main .card {
+                width: 280px;
+        }
+
+        #collection .collection-main .carde-image {
+                width: 250px;
+                height: 240px;
+        }
+
+        #collection .see-more {
+                width: auto;
+                margin-top: 30px;
+                margin-right: 10px;
+        }
+
+        /* ==============================
+              collection responsive end
+           ============================== */
+        /* ==============================
+              featured responsive start
+           ============================== */
+        #fetured {
+                margin-bottom: 50px;
+        }
+
+        #fetured .main-fetured {
+                align-items: center;
+                flex-direction: column-reverse;
+        }
+
+        #fetured .main-fetured .featured-image {
+                width: 290px;
+        }
+
+        #fetured .main-fetured .featured-text {
+                width: 280px;
+                text-align: center;
+        }
+
+        #fetured .main-fetured .featured-text p {
+                width: 280px;
+        }
+
+        #fetured .main-fetured .featured-text a {
+                margin-top: 30px;
+                margin-bottom: 40px;
+        }
+
+        /* ==============================
+              featured responsive end
+           ============================== */
+        /* ==============================
+              footer responsive start
+           ============================== */
+        footer .social ul li {
+                margin: 0 4px;
+        }
+
+        /* ==============================
+              footer responsive end
+           ============================== */
+
+}
+
+
+
+/* ========responsive for mobile landscape device=============== */
+
+@media only screen and (min-width:576px) and (max-width:767.98px) {
+
+        /* ==============================
+              common responsive start
+           ============================== */
+        .container {
+                max-width: 540px;
+                padding: 0 15px;
+        }
+
+        /* ==============================
+              common responsive end
+           ============================== */
+        /* ==============================
+             typography responsive start
+           ============================== */
+        nav .logo-text {
+                font-size: 16px;
+                line-height: 24px;
+        }
+
+        .main-heading {
+                font-size: 28px;
+                line-height: 42px;
+        }
+
+        .banner-pra {
+                font-size: 14px;
+                line-height: 21px;
+
+        }
+
+        .collection-heading {
+                font-size: 16px;
+                line-height: 24px;
+
+        }
+
+        .card-heading {
+                font-weight: 700;
+        }
+
+        .card-price {
+                font-weight: 700;
+
+        }
+
+        .featured-heading {
+                font-size: 24px;
+                line-height: 36px;
+        }
+
+        .logo-text {
+                font-size: 16px;
+                line-height: 24px;
+        }
+
+        .footer-copywrite {
+                font-size: 12px;
+                line-height: 24px;
+        }
+
+        /* ==============================
+              typography responsive end
+           ============================== */
+        /* ==============================
+                 nav responsive start
+           ============================== */
+
+
+        nav .navbar {
+                padding: 35px 0 22px 0;
+        }
+
+        nav .navbar .nav-burger {
+                display: block;
+        }
+
+        nav .navbar .nav-items ul {
+                display: none;
+        }
+
+
+
+        nav .navbar .nav-items ul li .search {
+                display: none;
+        }
+
+        nav .navbar .nav-items ul li {
+                margin-left: 0px;
+        }
+
+        nav .navbar .nav-items ul li .cart-shoping {
+                width: 24px;
+                height: 24px;
+        }
+
+        /* ==============================
+                 nav responsive end
+           ============================== */
+        /* ==============================
+                 banner responsive start
+           ============================== */
+        #banner-part .banner-main {
+                flex-direction: column-reverse;
+                align-items: center;
+        }
+
+        #banner-part .banner-main .banner-image {
+                width: 257px;
+                height: 257px;
+        }
+
+        #banner-part .banner-main .banner-image .camera-image {
+                width: 202px;
+                height: 190px;
+                position: absolute;
+
+        }
+
+        #banner-part .banner-main .banner-text {
+                padding-top: 10px;
+                text-align: center;
+                width: 280px;
+        }
+
+        #banner-part .banner-main .banner-text h1 {
+                width: auto;
+        }
+
+        #banner-part .banner-main .banner-text p {
+                width: auto;
+        }
+
+        /* ==============================
+                 banner responsive end
+           ============================== */
+        /* ==============================
+              partner responsive start
+           ============================== */
+        #partner {
+                padding-bottom: 50px;
+        }
+
+        #partner hr {
+                width: 520px;
+        }
+
+        #partner .partner-logo {
+                width: 420px;
+                padding: 30px 0 0 0;
+                flex-wrap: wrap;
+        }
+
+        #partner .partner-logo li {
+                margin-bottom: 15px;
+                width: 90px;
+                height: 50px;
+        }
+
+        /* ==============================
+              partner responsive end
+           ============================== */
+
+        /* ==============================
+            collection responsive start
+           ============================== */
+        #collection {
+                padding-bottom: 50px;
+        }
+
+        #collection .collection-main {
+                width: 330px;
+        }
+
+        #collection .collection-main .cards {
+                width: auto;
+                grid-template-columns: repeat(1, 1fr);
+                grid-row-gap: 20px;
+
+        }
+
+        #collection .collection-main .card {
+                width: 330px;
+        }
+
+        #collection .collection-main .carde-image {
+                width: 300px;
+                height: 256px;
+        }
+
+        #collection .see-more {
+                width: auto;
+                margin-top: 30px;
+                margin-right: 10px;
+        }
+
+        /* ==============================
+              collection responsive end
+           ============================== */
+        /* ==============================
+              featured responsive start
+           ============================== */
+        #fetured {
+                margin-bottom: 50px;
+        }
+
+        #fetured .main-fetured {
+                align-items: center;
+                flex-direction: column-reverse;
+        }
+
+
+
+        #fetured .main-fetured .featured-text {
+                width: 280px;
+                text-align: center;
+        }
+
+        #fetured .main-fetured .featured-text p {
+                width: 280px;
+        }
+
+        #fetured .main-fetured .featured-text a {
+                margin-top: 30px;
+                margin-bottom: 40px;
+        }
+
+        /* ==============================
+              featured responsive end
+           ============================== */
+        /* ==============================
+              footer responsive start
+           ============================== */
+        footer .social ul li {
+                margin: 0 4px;
+        }
+
+        /* ==============================
+              footer responsive end
+           ============================== */
+
+}
+
+
+/* ========responsive for tab device=============== */
+
+@media only screen and (min-width:768px) and (max-width:991.98px) {
+
+        /* ==============================
+              common responsive start
+           ============================== */
+        .container {
+                max-width: 720px;
+        }
+
+        /* ==============================
+              common responsive end
+           ============================== */
+        /* ==============================
+             typography responsive start
+           ============================== */
+        nav .logo-text {
+                font-size: 18px;
+                line-height: 24px;
+        }
+
+        .main-heading {
+                font-size: 28px;
+                line-height: 42px;
+        }
+
+        .banner-pra {
+                font-size: 14px;
+                line-height: 21px;
+        }
+
+        .collection-heading {
+                font-size: 16px;
+                line-height: 24px;
+
+        }
+
+        .featured-heading {
+                font-size: 24px;
+                line-height: 36px;
+        }
+
+        .logo-text {
+                font-size: 18px;
+                line-height: 30px;
+        }
+
+        .footer-copywrite {
+                font-size: 12px;
+                line-height: 24px;
+        }
+
+        /* ==============================
+              typography responsive end
+           ============================== */
+        /* ==============================
+                 nav responsive start
+           ============================== */
+
+
+        nav .navbar {
+                padding: 40px 0 50px 0;
+        }
+
+        nav .navbar .nav-burger {
+                display: block;
+        }
+
+        nav .navbar .nav-items ul {
+                display: none;
+        }
+
+
+
+        nav .navbar .nav-items ul li .search {
+                display: none;
+        }
+
+        nav .navbar .nav-items ul li {
+                margin-left: 0px;
+        }
+
+        nav .navbar .nav-items ul li .cart-shoping {
+                width: 24px;
+                height: 24px;
+        }
+
+        /* ==============================
+                 nav responsive end
+           ============================== */
+        /* ==============================
+                 banner responsive start
+           ============================== */
+        #banner-part .banner-main {
+                align-items: center;
+        }
+
+        #banner-part .banner-main .banner-image {
+                width: 350px;
+                height: 350px;
+        }
+
+        #banner-part .banner-main .banner-image .camera-image {
+                width: 290px;
+                height: 270px;
+        }
+
+        #banner-part .banner-main .banner-text {
+                padding-top: 10px;
+                width: 315px;
+        }
+
+        #banner-part .banner-main .banner-text h1 {
+                width: auto;
+        }
+
+        #banner-part .banner-main .banner-text p {
+                width: auto;
+        }
+
+        /* ==============================
+                 banner responsive end
+           ============================== */
+        /* ==============================
+              partner responsive start
+           ============================== */
+        #partner {
+                padding-bottom: 50px;
+        }
+
+        #partner hr {
+                width: 720px;
+
+        }
+
+        #partner .partner-logo {
+                width: 670px;
+                padding: 30px 0 0 0;
+                flex-wrap: wrap;
+        }
+
+        #partner .partner-logo li {
+                width: 70px;
+                height: 50px;
+                margin-bottom: 15px;
+        }
+
+        /* ==============================
+              partner responsive end
+           ============================== */
+
+        /* ==============================
+            collection responsive start
+           ============================== */
+        #collection {
+                padding-bottom: 50px;
+        }
+
+        #collection .collection-main {
+                width: auto;
+        }
+
+        #collection .collection-main .cards {
+                width: auto;
+                grid-template-columns: repeat(2, 1fr);
+                grid-row-gap: 20px;
+
+        }
+
+        #collection .collection-main .card {
+                width: 330px;
+        }
+
+        #collection .collection-main .carde-image {
+                width: 300px;
+                height: 256px;
+        }
+
+        #collection .see-more {
+                width: auto;
+                margin-top: 30px;
+                margin-right: 10px;
+        }
+
+        /* ==============================
+              collection responsive end
+           ============================== */
+        /* ==============================
+              featured responsive start
+           ============================== */
+        #fetured {
+                margin-bottom: 50px;
+        }
+
+        #fetured .main-fetured {
+                align-items: center;
+                justify-content: left;
+        }
+
+        #fetured .main-fetured .featured-image {
+                width: 320px;
+                height: 320px;
+        }
+
+        #fetured .main-fetured .featured-text {
+                width: auto;
+                margin-left: 30px;
+        }
+
+        #fetured .main-fetured .featured-text p {
+                width: 350px;
+        }
+
+        #fetured .main-fetured .featured-text a {
+                margin-top: 15px;
+                margin-bottom: 10px;
+        }
+
+        /* ==============================
+              featured responsive end
+           ============================== */
+        /* ==============================
+              footer responsive start
+           ============================== */
+        footer .social ul li {
+                margin: 0 4px;
+        }
+
+        /* ==============================
+              footer responsive end
+           ============================== */
+
+}
+
+/* ========responsive for laptop device=============== */
+
+@media only screen and (min-width:992px) and (max-width:1199.98px) {
+
+        /* ==============================
+              common responsive start
+           ============================== */
+        .container {
+                max-width: 960px;
+        }
+
+        /* ==============================
+              common responsive end
+           ============================== */
+        /* ==============================
+             typography responsive start
+           ============================== */
+        nav .logo-text {
+                font-size: 20px;
+                line-height: 24px;
+        }
+
+        .main-heading {
+                font-size: 40px;
+                line-height: 60px;
+        }
+
+        .banner-pra {
+                font-size: 14px;
+                line-height: 21px;
+        }
+
+        .collection-heading {
+                font-size: 24px;
+                line-height: 50px;
+        }
+
+        .featured-heading {
+                font-size: 28px;
+                line-height: 38px;
+        }
+
+        .feature-pra {
+
+                font-size: 15px;
+                line-height: 28px;
+        }
+
+        /* ==============================
+              typography responsive end
+           ============================== */
+        /* ==============================
+                 nav responsive start
+           ============================== */
+
+
+        nav .navbar {
+                padding: 60px 0 50px 0;
+        }
+
+        nav .navbar .nav-burger {
+                display: none;
+        }
+
+        nav .navbar .nav-items ul {
+                display: block;
+        }
+
+
+
+        nav .navbar .nav-items ul li .search {
+                display: block;
+        }
+
+
+
+        nav .navbar .nav-items ul li .cart-shoping {
+                width: 24px;
+                height: 24px;
+        }
+
+        /* ==============================
+                 nav responsive end
+           ============================== */
+        /* ==============================
+                 banner responsive start
+           ============================== */
+        #banner-part .banner-main {
+                align-items: center;
+        }
+
+        #banner-part .banner-main .banner-image {
+                width: 430px;
+                height: 430px;
+        }
+
+        #banner-part .banner-main .banner-image .camera-image {
+                width: 340px;
+                height: 314px;
+        }
+
+        #banner-part .banner-main .banner-text {
+                padding-top: 10px;
+                width: 460px;
+        }
+
+        #banner-part .banner-main .banner-text h1 {
+                width: auto;
+        }
+
+        #banner-part .banner-main .banner-text p {
+                width: auto;
+        }
+
+        /* ==============================
+                 banner responsive end
+           ============================== */
+        /* ==============================
+              partner responsive start
+           ============================== */
+        #partner {
+                padding-bottom: 80px;
+        }
+
+        #partner hr {
+                width: 960px;
+        }
+
+        #partner .partner-logo {
+                width: 850px;
+                padding: 30px 0 0 0;
+                flex-wrap: wrap;
+        }
+
+        #partner .partner-logo li {
+                margin-bottom: 15px;
+        }
+
+        /* ==============================
+              partner responsive end
+           ============================== */
+
+        /* ==============================
+            collection responsive start
+           ============================== */
+        #collection {
+                padding-bottom: 80px;
+        }
+
+        #collection .collection-main {
+                width: 920px;
+        }
+
+        #collection .collection-main .cards {
+                width: auto;
+                grid-template-columns: repeat(3, 1fr);
+                grid-row-gap: 20px;
+
+        }
+
+        #collection .collection-main .card {
+                width: 285px;
+        }
+
+        #collection .collection-main .carde-image {
+                width: 250px;
+                height: 220px;
+        }
+
+        #collection .see-more {
+                width: auto;
+                margin-top: 30px;
+                margin-right: 10px;
+        }
+
+        /* ==============================
+              collection responsive end
+           ============================== */
+        /* ==============================
+              featured responsive start
+           ============================== */
+        #fetured {
+                margin-bottom: 80px;
+        }
+
+        #fetured .main-fetured {
+                align-items: center;
+                justify-content: left;
+        }
+
+        #fetured .main-fetured .featured-image {
+                width: 380px;
+                height: 270px;
+        }
+
+        #fetured .main-fetured .featured-text {
+                width: auto;
+                margin-left: 105px;
+        }
+
+        #fetured .main-fetured .featured-text p {
+                width: 475px;
+        }
+
+        #fetured .main-fetured .featured-text a {
+                margin-top: 15px;
+                margin-bottom: 10px;
+        }
+
+        /* ==============================
+              featured responsive end
+           ============================== */
+
+
+}
+
+/* ========responsive for desktop device=============== */
+@media only screen and (min-width:1200px) and (max-width:1399.98px) {
+
+        /* ==============================
+              common responsive start
+           ============================== */
+        .container {
+                max-width: 1140px;
+        }
+
+        /* ==============================
+              common responsive end
+           ============================== */
+        /* ==============================
+              partner responsive start
+           ============================== */
+
+
+        #partner .partner-logo {
+                width: 1050px;
+        }
+
+        /* ==============================
+               partner responsive end
+           ============================== */
+}
+
+/* ==========================>>>responsive end<<<<====================== */
